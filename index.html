@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    <title>Encriptador de mensajes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/img/aluraoracle.png" alt="logo de alura" />
+    </header>
+    <main>
+      <form class="form__section">
+        <textarea
+          class="form__input"
+          name="mesaje"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <div class="btn__container">
+          <div class="alert__msj">
+            <img src="assets/img/Vectorspam.png" alt="alert" /><span
+              >solo letras minusculas y si n acento</span
+            >
+          </div>
+        </div>
+        <div class="submit__container">
+          <input class="form__btn" type="submit" value="Encriptar" />
+          <input
+            class="form__btn--secundary"
+            type="submit"
+            value="Desencriptar"
+          />
+        </div>
+      </form>
+      <aside class="result">
+        <img
+          src="assets/img/Muñecoimagen.png"
+          alt="Imagen de monito"
+          class="result__img"
+        />
+        <div class="loader hidden"></div>
+        <div class="result__container">
+          <h3 class="result__title">Ningún mensaje fue encontrado</h3>
+          <p class="result__text">
+            Ingresa el texto que sees encriptar o desencriptar.
+          </p>
+          <button class="form__btn--secundary hidden">Copiar</button>
+        </div>
+      </aside>
+    </main>
+    <script src="encriptador.js"></script>
+  </body>
+</html>
